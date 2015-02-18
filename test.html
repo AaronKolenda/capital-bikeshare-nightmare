@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How many bikes?</title>
+
+    <link rel="stylesheet" href="libs/mocha.css" />
+    <script src="libs/mocha.js"></script>
+    <script src="libs/chai.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/jquery.js"></script>
+        <script src="index.js"></script>
+
+
+    <style>
+      header {
+        padding:10px;
+        text-align: center;
+        font-size: 25px;
+        font-family: verdana, sans-serif;
+
+      }
+
+      .instructions {
+        text-align: center;
+        font-family: verdana, sans-serif;
+        font-size: 15px;
+        margin-top: 50px;
+      }
+
+      input {
+        height: 30px;
+        width: 300px;
+        border-radius: 5px;
+        margin: auto;
+        display: block;
+      }
+
+      button {
+        text-align: center;
+        height: 30px;
+        width: 120px;
+        border-radius: 5px;
+        line-height: 10px;
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+      }
+
+      .output {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 50px;
+        font-family: verdana, sans-serif;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>How many bikes?</h1>
+    </header>
+
+    <section class="instructions">
+      <p>Type the exact name of a bike station and find out the current number of bikes there.</p>
+      <p>Examples:</p>
+      <p> "Lincoln Park / 13th &amp East Capitol St NE"</p>
+      <p> "Utah St & 11th St N"</p>
+      <p>"Washington Blvd & Walter Reed Dr"</p>
+    </section>
+
+
+
+      <input type="text" id="stationName">
+
+      <button id="getBikeNum">Get Number of Bikes!</button>
+
+      <section class="output" id="output">
+      </section>
+
+  
+
+    
+  </body>
+</html>
